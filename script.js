@@ -16,9 +16,8 @@ const opClear = document.getElementById("clear");
 //      função da operação
 ////////////////////////////////////////////////////////////////////
 const operacao = (operador) => {
-  let n1 = 10;
-  let n2 = 8;
-  // let operador = 
+  let n1 = Number(op1.value);
+  let n2 = Number(op2.value);
   switch (operador) {
     case '+':
       return console.log(n1+n2);
@@ -32,14 +31,10 @@ const operacao = (operador) => {
       // limpar number1,number2 e resposta
     default:
       break;
-    }
-  };
-  
-  ///////////////////////////////////////////////////////////////////
-  //      ouvindo o evento click
-  ////////////////////////////////////////////////////////////////////
-  const soma = (opPlus.addEventListener('click', operacao('+')));
-  const subtrai = (opPlus.addEventListener('click', operacao('-')));
-  const multiplica = (opPlus.addEventListener('click', operacao('*')));
-  const divide = (opPlus.addEventListener('click', operacao('/')));
-  const solimpama = (opPlus.addEventListener('click', operacao('c')));
+  }
+}
+///////////////////////////////////////////////////////////////////
+//      ouvindo o evento click
+////////////////////////////////////////////////////////////////////
+ opPlus.addEventListener('click', () => operacao('+'));
+
