@@ -3,23 +3,24 @@
 ////////////////////////////////////////////////////////////////////
 const op1 = document.getElementById("number1");
 const op2 = document.getElementById("number2");
-const opPlus = document.getElementById("plus");
-const opMinus = document.getElementById("minus");
-const opMultiply = document.getElementById("multiply");
-const opDivide = document.getElementById("divide");
-const opClear = document.getElementById("clear");
+// const opPlus = document.getElementById("plus");
+// const opMinus = document.getElementById("minus");
+// const opMultiply = document.getElementById("multiply");
+// const opDivide = document.getElementById("divide");
+// const opClear = document.getElementById("clear");
 const result = document.getElementById("resposta");
 const sinal = document.getElementById("operacao");
+const botoes = document.querySelectorAll("#button-area");
 
 
 
 ///////////////////////////////////////////////////////////////////
 //      função da operação
 ////////////////////////////////////////////////////////////////////
-const operacao = (operador) => {
+const operacao = (event) => {
   let n1 = Number(op1.value);
   let n2 = Number(op2.value);
-  sinal.innerText = operador;
+  const operador = event.target.innerText
   let resultado;
   switch (operador) {
     case '+':
@@ -40,6 +41,7 @@ const operacao = (operador) => {
       op2.value = '';
       sinal.innerText = '';
       result.textContent = '';
+      return;
     default:
       break;
   }
@@ -48,9 +50,14 @@ const operacao = (operador) => {
 ///////////////////////////////////////////////////////////////////
 //      ouvindo o evento click
 ////////////////////////////////////////////////////////////////////
-opPlus.addEventListener('click', () => operacao('+'));
-opMinus.addEventListener('click', () => operacao('-'));
-opMultiply.addEventListener('click', () => operacao('*'));
-opDivide.addEventListener('click', () => operacao('/'));
-opClear.addEventListener('click', () => operacao('c'));
+// opPlus.addEventListener('click', () => operacao('+'));
+// opMinus.addEventListener('click', () => operacao('-'));
+// opMultiply.addEventListener('click', () => operacao('*'));
+// opDivide.addEventListener('click', () => operacao('/'));
+// opClear.addEventListener('click', () => operacao('c'));
+
+botoes.forEach((botao) => {
+  botao.addEventListener('click', operacao)
+});
+
 
