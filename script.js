@@ -36,10 +36,10 @@ const operacao = (operador) => {
       break;
     case 'c':
       // limpar number1,number2, sinal e resposta
-      op1.innerText = ' ';
-      op2.innerText = ' ';
-      sinal.innerText = ' ';
-      result.innerText = ' ';
+      op1.value = '';
+      op2.value = '';
+      sinal.innerText = '';
+      result.textContent = '';
     default:
       break;
   }
