@@ -21,7 +21,6 @@ Para executar o projeto, você só precisa de um navegador web atualizado, como 
 
 O código JavaScript que realiza as operações matemáticas pode ser encontrado no arquivo `script.js`.
 
-
 ## Personalização
 
 Se desejar personalizar o projeto, você pode modificar o arquivo `styles.css` para ajustar a aparência da calculadora. Além disso, pode adicionar mais funcionalidades, como validar os inputs, adicionar outras operações matemáticas ou melhorar a experiência do usuário.
