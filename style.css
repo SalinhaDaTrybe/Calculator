@@ -17,7 +17,7 @@ header {
   gap: 10px;
 }
 
-form {
+main {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -29,5 +29,5 @@ form {
 }
 
 #button-area > button {
-  padding: 5px;
+  padding: 8px;
 }
