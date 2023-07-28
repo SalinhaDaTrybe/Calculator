@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#input-area > input {
+  width: 30px;
+  height: 30px;
+}
+
+#button-area > button {
+  padding: 5px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bem vindo ao nosso projeto Calculadora!</h1>
+      <p>Insira 2 número abaixo para realizar uma operação matemática.</p>
+    </header>
+    <main>
+      <div id="input-area">
+        <input type="text" id="number1" />
+        <span id="operacao"></span>
+        <!-- Aqui ira aparecer o tipo de operador a ser realizado apos clicar no botao-->
+        <input type="text" id="number2" />
+        <span>=</span>
+        <span id="resposta"></span>
+        <!-- Aqui ira aparecer o resultado da operacao matematica-->
+      </div>
+      <div id="button-area">
+        <button id="plus" type="submit">+</button>
+        <button id="minus" type="submit">-</button>
+        <button id="multiply" type="submit">*</button>
+        <button id="divide" type="submit">/</button>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
