@@ -29,5 +29,7 @@ form {
 }
 
 #button-area > button {
+  margin-top: 10px;
   padding: 5px;
+  border-radius: 50px;
 }
