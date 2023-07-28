@@ -9,6 +9,7 @@ const opMultiply = document.getElementById("multiply");
 const opDivide = document.getElementById("divide");
 const opClear = document.getElementById("clear");
 const result = document.getElementById("resposta");
+const sinal = document.getElementById("operacao");
 
 
 
@@ -18,22 +19,27 @@ const result = document.getElementById("resposta");
 const operacao = (operador) => {
   let n1 = Number(op1.value);
   let n2 = Number(op2.value);
+  sinal.innerText = operador;
   let resultado;
   switch (operador) {
     case '+':
-      resultado = n1 + n2
+      resultado = n1 + n2;
       break;
     case '-':
-      resultado = n1 - n2
+      resultado = n1 - n2;
       break;
     case '*':
-      resultado = n1 + n2
+      resultado = n1 * n2;
       break;
     case '/':
-      resultado = n1 / n2
+      resultado = n1 / n2;
       break;
     case 'c':
-      // limpar number1,number2 e resposta
+      // limpar number1,number2, sinal e resposta
+      op1.innerText = ' ';
+      op2.innerText = ' ';
+      sinal.innerText = ' ';
+      result.innerText = ' ';
     default:
       break;
   }
