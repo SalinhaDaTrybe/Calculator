@@ -4,6 +4,8 @@ Este projeto consiste em uma calculadora básica com interface já desenvolvida 
 
 ## Funcionalidades
 
+<img src="./Images/Screenshot from 2023-07-28 13-11-33.png" alt="Foto da pagina do projeto Calculadora."/>
+
 - O usuário pode inserir dois números através de campos de entrada.
 - A calculadora permite realizar as quatro operações matemáticas básicas: adição, subtração, multiplicação e divisão.
 - Ao clicar na operação desejada, o resultado da operação será exibido ao lado.
